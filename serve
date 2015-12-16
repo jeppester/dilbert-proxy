@@ -1,0 +1,6 @@
+#!/bin/bash
+BASEDIR=$(dirname $0)
+cd $BASEDIR
+echo 'Starting server on 0.0.0.0:8000';
+xdg-open http://0.0.0.0:8000/dilbert-proxy.php;
+php -S 0.0.0.0:8000;
